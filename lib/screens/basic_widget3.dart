@@ -61,4 +61,32 @@ class _basicWidget3State extends State<basicWidget3> {
       ]),
     );
   }
+
+  @override
+  Widget radioListTile() {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Checkbox(
+              value: _isChecked,
+              onChanged: (value) {
+                setState(() {
+                  _isChecked = value!;
+                });
+              }),
+          SizedBox(
+            height: 40,
+          ),
+          Switch(
+              value: _isChecked,
+              onChanged: (value) {
+                setState(() {
+                  _isChecked = value;
+                });
+              })
+        ],
+      ),
+    );
+  }
 }
