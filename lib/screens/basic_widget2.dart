@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 // pageview 예제
+// button 예제
 // ignore: camel_case_types
 class basicWidget2 extends StatelessWidget {
   const basicWidget2({super.key});
