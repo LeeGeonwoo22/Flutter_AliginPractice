@@ -29,6 +29,7 @@ class aliginScreen extends StatelessWidget {
     return Container(
       color: Colors.black,
       // column 점일경우
+      // 화면 동적인 사이즈 관리 MediaQuery
       // width: MediaQuery.of(context).size.width,
       // row점일경우 테스트
       height: MediaQuery.of(context).size.height,
@@ -72,6 +73,42 @@ class aliginScreen extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+
+  Widget StackPositioned() {
+    return Stack(
+      children: <Widget>[
+        Container(
+          color: Colors.yellow,
+          width: double.infinity,
+          height: double.infinity,
+        ),
+        Positioned(
+          top: 50.0,
+          left: 20.0,
+          child: Container(
+            color: Colors.red,
+            width: 100.0,
+            height: 100.0,
+            child: Center(
+              child: Text('Top Left'),
+            ),
+          ),
+        ),
+        Positioned(
+          bottom: 50.0,
+          right: 20.0,
+          child: Container(
+            color: Colors.blue,
+            width: 100.0,
+            height: 100.0,
+            child: Center(
+              child: Text('Bottom Right'),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
