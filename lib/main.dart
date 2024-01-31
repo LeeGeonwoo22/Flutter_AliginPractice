@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_study/screens/aligin_study.dart';
+import 'package:flutter_study/screens/aligin_study.dart';
 import 'package:flutter_study/screens/basic_widget.dart';
+import 'package:flutter_study/screens/basic_widget2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const basicWidget(),
+      home: const aliginScreen(),
     );
   }
 }
