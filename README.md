@@ -4,13 +4,11 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+main.dart 의 초기 렌더를 다루는 `home` 에서 
 
-A few resources to get you started if this is your first Flutter project:
+각각 페이지를 불러 렌더 할 수 있습니다. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+aliginScreen - 정렬
+basicWidget1 - 리스트뷰, 스택, 그리드뷰 & 탭바 개념 예제
+basicWidget2 - 각종 버튼과 페이지뷰 
+basicWidget3 - 체크박스라디오와 텍스트박스 
