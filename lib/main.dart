@@ -8,6 +8,7 @@ import 'package:flutter_study/screens/basic_widget5.dart';
 import 'package:flutter_study/screens/basic_widget6.dart';
 import 'package:flutter_study/screens/basic_widget7.dart';
 import 'package:flutter_study/screens/basic_widget8.dart';
+import 'package:flutter_study/screens/basic_widget9.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Basic_widget8(),
+      home: Basic_widget9(),
     );
   }
 }

@@ -20,7 +20,7 @@ class Basic_widget8 extends StatelessWidget {
           child: Hero(
               tag: 'image',
               child: Image.asset(
-                'assets/images/sample.jpg',
+                '/images/sample.jpg',
                 width: 100,
                 height: 100,
               )),
@@ -39,7 +39,7 @@ class HeroDetailPage extends StatelessWidget {
       appBar: AppBar(title: Text('Hero detail')),
       body: Hero(
         tag: 'image',
-        child: Image.asset('assets/images/sample.jpg'),
+        child: Image.asset('/images/sample.jpg'),
       ),
     );
   }
