@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
-class aliginScreen extends StatelessWidget {
-  const aliginScreen({super.key});
+class AliginScreen extends StatelessWidget {
+  const AliginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

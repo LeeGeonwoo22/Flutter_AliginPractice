@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
-class basicWidget extends StatelessWidget {
-  const basicWidget({super.key});
+class BasicWidget extends StatelessWidget {
+  const BasicWidget({super.key});
 
 // 리스트뷰, 스택, 그리드뷰 예제
 

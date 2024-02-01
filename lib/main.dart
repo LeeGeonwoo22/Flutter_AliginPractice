@@ -3,6 +3,11 @@ import 'package:flutter_study/screens/aligin_study.dart';
 import 'package:flutter_study/screens/basic_widget.dart';
 import 'package:flutter_study/screens/basic_widget2.dart';
 import 'package:flutter_study/screens/basic_widget3.dart';
+import 'package:flutter_study/screens/basic_widget4.dart';
+import 'package:flutter_study/screens/basic_widget5.dart';
+import 'package:flutter_study/screens/basic_widget6.dart';
+import 'package:flutter_study/screens/basic_widget7.dart';
+import 'package:flutter_study/screens/basic_widget8.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const basicWidget3(),
+      home: Basic_widget8(),
     );
   }
 }

@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 
-class basicWidget3 extends StatefulWidget {
-  const basicWidget3({super.key});
-
-  @override
-  State<basicWidget3> createState() => _basicWidget3State();
+enum Gender {
+  MAN,
+  WOMAN,
 }
 
-class _basicWidget3State extends State<basicWidget3> {
+class BasicWidget3 extends StatefulWidget {
+  const BasicWidget3({super.key});
+
+  @override
+  State<BasicWidget3> createState() => _BasicWidget3State();
+}
+
+class _BasicWidget3State extends State<BasicWidget3> {
   var _isChecked = false;
   var _isChecked2 = false;
 // 입력용 위젯
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: checkBoxRadio());
+    return Scaffold(body: ListTitle());
   }
 
   Widget textField() {
@@ -62,7 +67,6 @@ class _basicWidget3State extends State<basicWidget3> {
     );
   }
 
-  @override
   Widget radioListTile() {
     return Center(
       child: Column(
@@ -86,6 +90,23 @@ class _basicWidget3State extends State<basicWidget3> {
                 });
               })
         ],
+      ),
+    );
+  }
+
+  Gender _gender = Gender.MAN;
+
+  Widget ListTitle() {
+    return ListTile(
+      title: Text("남자"),
+      leading: Radio(
+        value: Gender.MAN,
+        groupValue: _gender,
+        onChanged: (value) {
+          setState(() {
+            _gender = value!;
+          });
+        },
       ),
     );
   }

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 // pageview 예제
 // button 예제
 // ignore: camel_case_types
-class basicWidget2 extends StatelessWidget {
-  const basicWidget2({super.key});
+class BasicWidget2 extends StatelessWidget {
+  const BasicWidget2({super.key});
   Widget text() {
     return Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
