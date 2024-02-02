@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Basic_widget10 extends StatelessWidget {
-  const Basic_widget10({super.key});
+  Basic_widget10({super.key});
+  final _items = List.generate(
+      50,
+      (index) => ListTile(
+            title: Text('No. $index'),
+          ));
 
   @override
   Widget build(BuildContext context) {
@@ -13,19 +18,29 @@ class Basic_widget10 extends StatelessWidget {
             pinned: true,
             // 확대될때 최대의 높이를 정함
             expandedHeight: 180.0,
-            title: Text('Silver'),
+
             // 확대/축소되는 영역의 Ui를 작성함
             flexibleSpace: FlexibleSpaceBar(
+                title: Text('Silver'),
                 background: Image.asset(
-              '/images/sample.jpg',
-              fit: BoxFit.cover,
-            )),
+                  '/images/sample.jpg',
+                  fit: BoxFit.cover,
+                )),
+            actions: [
+              IconButton(
+                  onPressed: () {},
+                  icon: Image.asset('assets/images/github-logo.png'))
+            ],
           ),
-          SliverFillRemaining(
-            child: Center(
-              child: Text('center'),
-            ),
-          )
+          // SliverFillRemaining(
+          //   child: Center(
+          //     child: Text('center'),
+          //   ),
+          // )
+          // SilverList로 대신 구현
+          SliverList(
+            delegate: SliverChildListDelegate(_items),
+          ),
         ],
       ),
     );
