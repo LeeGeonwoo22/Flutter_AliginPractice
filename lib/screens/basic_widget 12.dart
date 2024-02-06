@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study/main.dart';
 
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
 
-class Basic_Widget_12 extends StatelessWidget {
-  const Basic_Widget_12({super.key});
+// class Basic_Widget_12 extends StatelessWidget {
+//   const Basic_Widget_12({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: FirstPage(),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       theme: ThemeData(primarySwatch: Colors.blue),
+//       home: FirstPage(),
+//     );
+//   }
+// }
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
