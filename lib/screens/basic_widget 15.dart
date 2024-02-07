@@ -99,24 +99,40 @@ Widget _buildBottom() {
 
 Widget _buildTop() {
   return Column(children: [
-    Icon(
-      Icons.pedal_bike,
-      size: 40,
-    ),
-    Text('바이크'),
+    Center(
+      child: Row(
+        children: [
+          Icon(
+            Icons.pedal_bike,
+            size: 40,
+          ),
+          Text('바이크'),
+          SizedBox(
+            width: 10,
+          ),
+          Icon(
+            Icons.train,
+            size: 40,
+          ),
+          Text('기차'),
+          SizedBox(
+            width: 10,
+          ),
+          Icon(
+            Icons.local_taxi,
+            size: 40,
+          ),
+          Text('택시')
+        ],
+      ),
+    )
   ]);
 }
 
 class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      Icon(
-        Icons.train,
-        size: 40,
-      ),
-      Text('바이크'),
-    ]);
+    return _buildTop();
   }
 }
 
