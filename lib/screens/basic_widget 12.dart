@@ -1,48 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/main.dart';
+import 'package:flutter_study/screens/basic_widget%2012-1.dart';
 
-// void main() => runApp(MyApp());
-
-// class Basic_Widget_12 extends StatelessWidget {
-//   const Basic_Widget_12({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Flutter Demo',
-//       theme: ThemeData(primarySwatch: Colors.blue),
-//       home: FirstPage(),
-//     );
-//   }
-// }
-
-class FirstPage extends StatelessWidget {
-  const FirstPage({super.key});
+class Basic_Widget_12 extends StatelessWidget {
+  const Basic_Widget_12({super.key});
 
   @override
   Widget build(BuildContext context) {
+    print('Basic_Widget_12 build()');
     return Scaffold(
       appBar: AppBar(
         title: Text('First'),
         actions: [],
       ),
-      body: ElevatedButton(onPressed: () {}, child: Text('다음페이지로')),
-    );
-  }
-}
-
-class SecondPage extends StatelessWidget {
-  const SecondPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Second'),
+      body: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => SecondPage(
+                          age: '20',
+                          name: '장길산',
+                        )));
+          },
+          child: Text('다음페이지로')),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          label: 'Home',
         ),
-        body: ElevatedButton(
-          onPressed: () {},
-          child: Text('이전 페이지로'),
-        ));
+        BottomNavigationBarItem(
+          icon: Icon(Icons.perm_identity_rounded),
+          label: 'Profile',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.note_alt),
+          label: 'Notification',
+        ),
+      ]),
+    );
   }
 }

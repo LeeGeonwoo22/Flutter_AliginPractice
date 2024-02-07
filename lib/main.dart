@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study/screens/aligin_study.dart';
 import 'package:flutter_study/screens/basic_widget%2011.dart';
+import 'package:flutter_study/screens/basic_widget%2012-1.dart';
+import 'package:flutter_study/screens/basic_widget%2012.dart';
 import 'package:flutter_study/screens/basic_widget%2013.dart';
+import 'package:flutter_study/screens/basic_widget%2014.dart';
+import 'package:flutter_study/screens/basic_widget%2014-1.dart';
+import 'package:flutter_study/screens/basic_widget%2015.dart';
 import 'package:flutter_study/screens/basic_widget.dart';
 import 'package:flutter_study/screens/basic_widget10.dart';
 import 'package:flutter_study/screens/basic_widget2.dart';
@@ -30,7 +35,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: BasicWidget_13(),
+      home: Basic_Widget_15(),
+      // Map형태로 키-쌍 값으로 문자열과 목적지 인스턴스를 작성.
+      routes: {'/first': (context) => Basic_Widget_14()},
     );
   }
 }
