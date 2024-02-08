@@ -32,12 +32,6 @@ class Basic_widget10 extends StatelessWidget {
                   icon: Image.asset('assets/images/github-logo.png'))
             ],
           ),
-          // SliverFillRemaining(
-          //   child: Center(
-          //     child: Text('center'),
-          //   ),
-          // )
-          // SilverList로 대신 구현
           SliverList(
             delegate: SliverChildListDelegate(_items),
           ),

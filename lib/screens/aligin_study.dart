@@ -10,20 +10,20 @@ class AliginScreen extends StatelessWidget {
       bottom: false,
       child:
           // mainCrossAlignment(context)),
-          aliginExample(),
+          StackMargin(),
     ));
   }
 
-  Align aliginExample() {
-    return Align(
-      alignment: Alignment.bottomRight,
-      child: Container(
-        color: Colors.red,
-        width: 100,
-        height: 100,
-      ),
-    );
-  }
+  // Align aliginExample() {
+  //   return Align(
+  //     alignment: Alignment.bottomRight,
+  //     child: Container(
+  //       color: Colors.red,
+  //       width: 100,
+  //       height: 100,
+  //     ),
+  //   );
+  // }
 
   Container mainCrossAlignment(BuildContext context) {
     return Container(
@@ -79,11 +79,11 @@ class AliginScreen extends StatelessWidget {
   Widget StackPositioned() {
     return Stack(
       children: <Widget>[
-        Container(
-          color: Colors.yellow,
-          width: double.infinity,
-          height: double.infinity,
-        ),
+        // Container(
+        //   color: Colors.yellow,
+        //   width: double.infinity,
+        //   height: double.infinity,
+        // ),
         Positioned(
           top: 50.0,
           left: 20.0,
@@ -97,8 +97,8 @@ class AliginScreen extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 50.0,
-          right: 20.0,
+          top: 120.0,
+          left: 80.0,
           child: Container(
             color: Colors.blue,
             width: 100.0,
@@ -108,7 +108,60 @@ class AliginScreen extends StatelessWidget {
             ),
           ),
         ),
+        Positioned(
+          top: 80.0,
+          left: 50.0,
+          child: Container(
+            color: Colors.green,
+            width: 100.0,
+            height: 100.0,
+            child: Center(
+              child: Text('Middle Right'),
+            ),
+          ),
+        ),
       ],
     );
   }
+
+// stack에는 positioned 위젯 사용이 권장
+// margin 속성만으로 위치를 조절하면 원하는 위치에 정확하게 배치되지 않을 수 있음
+
+  Widget StackMargin() {
+    return Container(
+        child: Stack(
+      children: [
+        Container(
+          width: 100,
+          height: 100,
+          color: Colors.red,
+          margin: EdgeInsets.only(bottom: 50, right: 50),
+          child: Center(child: Text('StackMargin')),
+        ),
+        Container(
+          width: 100,
+          height: 100,
+          color: Colors.amber,
+          margin: EdgeInsets.only(top: 80, right: 100),
+          child: Center(child: Text('StackMargin')),
+        ),
+        // Container(
+        //   width: 100,
+        //   height: 100,
+        //   color: Colors.amber.shade900,
+        //   margin: EdgeInsets.only(bottom: 150, right: 150),
+        // ),
+      ],
+    ));
+  }
+
+  // Widget StackMargined() {
+  //   return Stack(
+  //     children: [
+  //       Container(
+  //         re
+  //       )
+  //     ],
+  //   )
+  // }
 }

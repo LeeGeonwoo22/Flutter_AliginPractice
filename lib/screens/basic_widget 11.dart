@@ -55,33 +55,4 @@ class _Basic_Widget_11State extends State<Basic_Widget_11> {
               ],
             ));
   }
-// _showCupertinoModalPopup(
-//   {context: context,
-//   builder: (context) => Container(
-//     height: 10.0,
-//     child: CupertinoPicker(children: [
-//       // ...
-//     ]),
-//     itemExtent: 10.0,
-//     onSelectedItemChanged: (int value) {
-//       // ...
-//     },
-//   ),
-// ) {
-//   // 함수의 내용
-// }
-
-  // _showCuperTinoPicker() async {
-  //   final _items = List.generate(10, (index) => index);
-  //   var result = _items[0];
-
-  //   await showCupertinoModalPopup(context: context, builder: (context) => Container(
-  //     height: 200.0,
-  //     child: CupertinoPicker(children: [
-  //       _items.map((e) => Text(
-  //         'No. $e')).toList(),  // 0~9 숫자표시
-  //         itemExtent : 50.0, // 항목 1개 높이는 50 
-  //     ]),
-  //   ))
-  // }
 }

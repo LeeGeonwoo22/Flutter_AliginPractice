@@ -21,12 +21,6 @@ class _Basic_Widget_15State extends State<Basic_Widget_15> {
         centerTitle: true,
         title: Text('복잡한 UI'),
       ),
-      // body: Center(
-      //   child: Text(
-      //     '$index 페이지',
-      //     style: TextStyle(fontSize: 40),
-      //   ),
-      // ),
       body: pages[index],
       bottomNavigationBar: BottomNavigationBar(
         onTap: (index2) {
@@ -54,11 +48,6 @@ class Page1 extends StatelessWidget {
     ]);
   }
 }
-
-// body 렌더화면 구성
-// Widget _buildTop() {
-//   return Text('Top');
-// }
 
 Widget _buildMiddle(context) {
   return CarouselSlider(
