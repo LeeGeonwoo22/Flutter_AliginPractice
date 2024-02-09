@@ -1,0 +1,20 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "full_name": "Andrew Brian",
+        "age": 14
+      },
+      {
+        "id": 2,
+        "full_name": "Cathy Anna",
+        "age": 16
+      },
+      {
+        "id": 3,
+        "full_name": "Dorothy Esther",
+        "age": 15
+      }
+    ]
+  }
+
